@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ask A Question</title>
+    </head>
+    <body background="./img/logo.JPG">
+        <form action="response.html" method="post">
+            <fieldset>
+                <h1 align="center"><font face="Algerian" color="black" size="8">Ask to University</font></h1>
+                <table align="center" bgcolor="gray" cellspacing="10" cellpadding="3">
+                     <tr align="center">
+                        <th ><font face="calibri" color="white"> Name</font></th>
+                        <td>:</td>
+                        <td><input type="text" name="name" id="FirstName" size="52"  placeholder="First Name"></td>
+                        <td><input type="text" name="name" id="MiddleName" size="52"  placeholder="Middle Name"></td>
+                        <td><input type="text" name="name" id="LastName" size="52"  placeholder="Last Name"></td>
+                    </tr>
+                    <tr>
+                        <th align="center" ><font face="calibri" color="white">Gender</font></th>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" name="gender" id="male">
+                            <label for="male"><font face="calibri" color="white">Male</font></label>
+                            <input type="radio" name="gender" id="female">
+                            <label for="female" ><font face="calibri" color="white" >Female</font></label>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <th><font face="calibri" color="white">Email</font></th>
+                        <td>:</td>
+                        <td><input  type="email" size="52"></td>
+                    </tr>
+                    <tr>
+                        <th align="center" ><font face="calibri" color="white">Mobile Phone number</font></th>
+                        <td>:</td>
+                        <td><input  type="tel" maxlength="13"></td>
+                    </tr> 
+                    <tr align="center">
+                        <th ><font face="calibri" color="white">Faculty and Major</font></th>
+                        <td>:</td>
+                        <td><label for="Faculty"><font face="calibri" color="white">Faculty :</font></label>
+                            <input id="Faculty" name="Faculty" list="Facultylist">
+                            <datalist id="Facultylist">
+                            <option value="Architecture, Design and Planning">
+                            <option value="Arts and Social Sciences">
+                            <option value="Business">
+                            <option value="Engineering and Information Technologies">
+                            <option value="Medicine and Health">
+                            <option value="Science">
+                            </datalist>
+
+                        </td>
+                        <td>
+                            <label for="Major"><font face="calibri" color="white">Major :</font></label>
+                            <input id="Major" name="Major" list="Majorlist">
+                            <datalist id="Majorlist">
+                            <option value="Architecture">
+                            <option value="Design">
+                            <option value="Honours">
+                            <option value="Art and Social Science">
+                            <option value="Education">
+                            <option value="Social Work">
+                            <option value="Visual Art">
+                            <option value="Accounting">
+                            <option value="Banking">
+                            <option value="Business Analytics">
+                            <option value="Finance">
+                            <option value="International Business">
+                            <option value="Managenent adn leadership">
+                            <option value="Advanced computing">
+                            <option value="Aeronautial engineering">
+                            <option value="Biomedical engineering">
+                            <option value="Chemical and biomolecular">
+                            <option value="Civil engineering">
+                            <option value="Electrical engineering">
+                            <option value="Machatronic engineering">
+                            <option value="Mechanical engineering">
+                            <option value="Software engineering">
+                            <option value="Dentstry">
+                            <option value="Health Science and aliied health">
+                            <option value="Medicine">
+                            <option value="Nursing">
+                            <option value="Pharmacy">
+                            <option value="Science Health">
+                            <option value="Advanced Science">
+                            <option value="Liberal art and science">
+                            <option value="Animal and Veterinity Bioscience">
+                            <option value="Agriculture">
+                            <option value="Food and agribusiness">
+                            <option value="Mathematical Science">
+                            <option value="Psychology">
+                            <option value="Medical Science">
+                            </datalist>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th align="center" ><font face="calibri" color="white">Question</font></th>
+                        <td>:</td>
+                        <td>
+                            <textarea id="question" rows="10" cols="50"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th align="center" ><font face="calibri" color="white">Answer Submisisson</font></th>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" name="Answer" id="email" >
+                            <label for="email"><font face="calibri" color="white">email</font></label>
+                            <input type="radio" name="Answer" id="phone">
+                            <label for="phone"><font face="calibri" color="white">Phone number</font></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="5" height="40"></th>
+                        <td>:</td>
+                    <tr>
+                        <td colspan="5" align="center">
+                            <button type="submit"><font face="calibri">Submit Form</font></button>
+                            <button type="reset"><font face="calibri">Reset Form</font></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="5"><a href="index.html"><font face="calibri" size="5" color="white">Back To Main Menu</font></a></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
